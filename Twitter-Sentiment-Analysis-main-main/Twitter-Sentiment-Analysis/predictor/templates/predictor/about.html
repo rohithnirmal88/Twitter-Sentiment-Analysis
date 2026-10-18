@@ -1,0 +1,112 @@
+{% extends 'predictor/base.html' %}
+
+{% block content %}
+
+<div class="container mt-5">
+
+    <div class="card shadow">
+
+        <div class="card-header bg-primary text-white">
+            <h2>About the Project</h2>
+        </div>
+
+        <div class="card-body">
+
+            <h4>Twitter Sentiment Analysis Using Machine Learning</h4>
+
+            <p>
+                This web application predicts the sentiment of Twitter posts using a
+                Machine Learning model. The model analyzes tweet text along with its
+                related topic (such as Borderlands, Amazon, Xbox, etc.) and classifies
+                the sentiment into one of four categories:
+            </p>
+
+            <ul>
+                <li>😊 Positive</li>
+                <li>😐 Neutral</li>
+                <li>😞 Negative</li>
+                <li>❓ Irrelevant</li>
+            </ul>
+
+            <hr>
+
+            <h4>Project Objective</h4>
+
+            <p>
+                The objective of this project is to build an intelligent sentiment
+                analysis system that automatically identifies users' opinions from
+                Twitter data. Businesses and organizations can use this information
+                to understand customer feedback, monitor brand reputation, and analyze
+                public opinion.
+            </p>
+
+            <hr>
+
+            <h4>Dataset Information</h4>
+
+            <ul>
+                <li>Dataset: Twitter Sentiment Analysis Dataset</li>
+                <li>Input Features: Tweet Text, Topic (City)</li>
+                <li>Target Variable: Review (Positive, Negative, Neutral, Irrelevant)</li>
+            </ul>
+
+            <hr>
+
+            <h4>Machine Learning Workflow</h4>
+
+            <ol>
+                <li>Data Collection</li>
+                <li>Data Cleaning and Preprocessing</li>
+                <li>Text Vectorization using TF-IDF</li>
+                <li>Topic Encoding</li>
+                <li>Model Training</li>
+                <li>Model Evaluation</li>
+                <li>Prediction through Django Web Application</li>
+            </ol>
+
+            <hr>
+
+            <h4>Technologies Used</h4>
+
+            <ul>
+                <li>Python</li>
+                <li>Django</li>
+                <li>Pandas</li>
+                <li>NumPy</li>
+                <li>Scikit-learn</li>
+                <li>TF-IDF Vectorizer</li>
+                <li>Bootstrap 5</li>
+                <li>Joblib</li>
+            </ul>
+
+            <hr>
+
+            <h4>Key Features</h4>
+
+            <ul>
+                <li>Predicts tweet sentiment instantly.</li>
+                <li>Simple and user-friendly interface.</li>
+                <li>Machine Learning model integrated with Django.</li>
+                <li>Real-time sentiment prediction.</li>
+                <li>Responsive web design using Bootstrap.</li>
+            </ul>
+
+            <hr>
+
+            <h4>Future Enhancements</h4>
+
+            <ul>
+                <li>User authentication and login system.</li>
+                <li>Prediction history stored in a database.</li>
+                <li>Interactive dashboard and charts.</li>
+                <li>Batch prediction using CSV file upload.</li>
+                <li>Deployment on cloud platforms.</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}

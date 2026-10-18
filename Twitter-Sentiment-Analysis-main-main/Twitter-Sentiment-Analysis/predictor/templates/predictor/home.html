@@ -1,0 +1,128 @@
+{% extends 'predictor/base.html' %}
+
+{% block content %}
+
+<div class="container mt-5">
+
+    <!-- Hero Section -->
+    <div class="p-5 mb-4 bg-primary text-white rounded shadow">
+        <div class="container-fluid py-4">
+
+            <h1 class="display-4 fw-bold">
+                Twitter Sentiment Analysis
+            </h1>
+
+            <p class="fs-5">
+                Predict the sentiment of Twitter posts using Machine Learning.
+                Enter a tweet and its related topic to classify it as
+                <strong>Positive</strong>,
+                <strong>Negative</strong>,
+                <strong>Neutral</strong>, or
+                <strong>Irrelevant</strong>.
+            </p>
+
+            <a href="/predict/" class="btn btn-light btn-lg">
+                Try Prediction
+            </a>
+
+        </div>
+    </div>
+
+    <!-- About Project -->
+    <div class="row">
+
+        <div class="col-md-6">
+
+            <div class="card shadow mb-4">
+
+                <div class="card-header bg-dark text-white">
+                    Project Overview
+                </div>
+
+                <div class="card-body">
+
+                    <p>
+                        This project uses Natural Language Processing (NLP) and
+                        Machine Learning to analyze Twitter posts and predict
+                        user sentiment based on tweet content and topic.
+                    </p>
+
+                    <p>
+                        The model has been trained on thousands of labeled tweets
+                        and is integrated into a Django web application for
+                        real-time prediction.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-6">
+
+            <div class="card shadow mb-4">
+
+                <div class="card-header bg-success text-white">
+                    Features
+                </div>
+
+                <div class="card-body">
+
+                    <ul>
+                        <li>Real-time sentiment prediction</li>
+                        <li>Machine Learning powered</li>
+                        <li>TF-IDF text vectorization</li>
+                        <li>Topic-based sentiment analysis</li>
+                        <li>Django web application</li>
+                        <li>Responsive Bootstrap interface</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Technology Stack -->
+    <div class="card shadow">
+
+        <div class="card-header bg-info text-white">
+            Technology Stack
+        </div>
+
+        <div class="card-body">
+
+            <div class="row text-center">
+
+                <div class="col-md-3">
+                    <h5>Python</h5>
+                    <p>Backend Development</p>
+                </div>
+
+                <div class="col-md-3">
+                    <h5>Django</h5>
+                    <p>Web Framework</p>
+                </div>
+
+                <div class="col-md-3">
+                    <h5>Scikit-learn</h5>
+                    <p>Machine Learning</p>
+                </div>
+
+                <div class="col-md-3">
+                    <h5>Bootstrap 5</h5>
+                    <p>User Interface</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}
